@@ -4,20 +4,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    
 }
-.header, .footer {
-    width: 100%;
-    background-color: #ec6607;
+
+.header {
+    width: 1147px;
+    
     padding: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    background: linear-gradient(rgb(236, 57, 7),rgb(218, 149, 31));
 }
 .header .logo {
     width: 80px;
     height: 50px;
-    background-color: #ec6607;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +33,7 @@ body {
 .header input[type="text"] {
     width: 100%;
     padding: 10px;
+    
     border: 1px solid #ccc;
     border-radius: 5px;
     
@@ -55,38 +58,48 @@ body {
     background: #e0e0e0;
     padding: 20px;
 }
-.profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 nav ul {
     list-style: none;
     padding: 0;
+
 }
-nav ul li {
-    margin: 10px 0;
-}
-nav ul li a {
-    text-decoration: none;
+nav ul li{
+    margin: 25px 0;
+    border: 1px solid black;
+    text-decoration-style: none;
     color: #333;
     font-weight: bold;
-    
 }
+nav ul li a{
+    text-decoration: double;
+}
+nav ul li a:hover{
+    color: chartreuse;
+}
+nav ul li:hover{
+    background-color: antiquewhite;
+
+}
+
 .content {
     flex: 1;
-    padding: 40;
-
+    padding: 40px;
+    border: 1px solid black;
+}
+.content h2{
+    text-align: center;
 }
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     background: #fff;
-    padding: 20px;
+    padding: 30px;
+   border: 1px solid black;
 
-
-    border:2px solid black;
+   
 }
 label {
     margin-top: 10px;
@@ -109,4 +122,13 @@ button {
 }
 button:hover {
     background: #4500b5;
+}
+.footer {
+    width: 1147px;
+    
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#ccc;
 }
