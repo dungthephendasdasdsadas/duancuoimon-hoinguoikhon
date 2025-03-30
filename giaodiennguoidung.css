@@ -11,26 +11,44 @@ body {
 
 .header {
     width: 100%;
-    height: 10px;
+    height: 50px;
     padding: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(rgb(236, 57, 7),rgb(218, 149, 31));
 }
-.header .Timkiem {
-    margin-right: 40px; /* Giảm margin để tránh lệch */
+.header h2{
+    flex:1;
+    padding-bottom: 60px;
+    font-size: 17px;
+}
+.header-ben {
     display: flex;
     align-items: center;
-    gap: 10px; /* Tạo khoảng cách giữa ô nhập và nút */
-    height: auto; /* Bỏ height cứng */
+}
+
+.header-ben img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.header .Timkiem {
+    margin-right: 140px; /* Giảm margin để tránh lệch */
+    display: flex;
+    align-items: center;
+
+    
 }
 
 .header .Timkiem input {
     padding: 8px;
-    width: 200px; /* Đặt độ rộng hợp lý */
+    width: 800px; /* Đặt độ rộng hợp lý */
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 130px;
+
 }
 
 .header .Timkiem button {
@@ -74,6 +92,7 @@ body {
     min-height: 100vh;
     background: white;
 }
+
 .sidebar {
     width: 20%;
     background: #e0e0e0;
@@ -138,13 +157,23 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.content form  button {
+    background-color: #6520c6;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-size: 18px;
 
+    }
+   
 footer{
     background: white;
     padding:40px 0;
     text-align: center;
     border-top: 1px solid white;
 }
+
 .footer-main{
     width: 80%;
     margin: auto;
