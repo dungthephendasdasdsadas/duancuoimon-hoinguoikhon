@@ -16,8 +16,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgb(236, 57, 7),rgb(218, 149, 31));
+    background: linear-gradient(0, #0447b5, #0447b5de);
 }
+
 .header h2{
     flex:1;
     padding-bottom: 60px;
