@@ -11,38 +11,47 @@
 <body>
 
     <div class="header">
-        <div>
-            <h2>Kênh người bán</h2>
+        <!-- Bên trái: Logo hoặc Kênh người bán -->
+        <div class="left">
+          <p>Kênh người bán</p>
         </div>
-        <div class="Timkiem">
-            <input type="text" placeholder="Tìm kiếm..." required>
-           <div class="header-ben">
-                <a href="Giaodiennguoidung.html"> <img src="img2/brn.jpg" alt="img user name" width="100px"></a>
-                
-                <span>User name</span>
-            </div>
+      
+        <!-- Ở giữa: Thanh tìm kiếm -->
+        <div class="center">
+          <input type="text" placeholder="Tìm kiếm..." required>
         </div>
-    </div>
+      
+        <!-- Bên phải: Ảnh đại diện + Tên user (và/hoặc giỏ hàng) -->
+        <div class="right">
+          <!-- Nếu có icon giỏ hàng, bạn có thể thêm ở đây -->
+          <a href="cart.html"><img src="img2/cart.png" alt="Cart" class="icon-cart"></a> 
+          
+          <a href="Giaodiennguoidung.html">
+            <img src="img2/brn.jpg" alt="img user name" class="avatar">
+          </a>
+          <span>User name</span>
+        </div>
+      </div>
+
     <div class="container">
         <aside class="sidebar">
             <img src="img2/Screenshot 2025-02-13 154916.png" alt="" class="Anhnguoidung">
             <nav>
                 <ul>
 
-                    <li><A href="">Sửa hồ sơ </A></li>
-                    <a href=""></a>
-
-                    <li> <a href="#"> Hồ sơ </a></li>
-                    <li> <a href="#"> Địa chỉ </a></li>
-                    <li> <a href="#"> Đổi mật khẩu</a></li>
-                    <li> <a href="#"> đơn mua</a></li>
-                    <li> <a href="#"> đã đánh giá</a></li>
-                    <li> <a href="#">tin nhắn</a></li>
-                </ul>
+                    <li><A href="">Sửa hồ sơ </A></li>  
+                    
+                  <li> <a href="Giaodiennguoidung.html"> Hồ sơ     </a></li>
+                  <li> <a href="DiachiUse.html"> Địa chỉ  </a></li>
+                  <li> <a href="#"> Đổi mật khẩu</a></li>
+                  <li> <a href="Donmua.html"> Đơn mua</a></li>
+                  <li> <a href="#"> Đã đánh giá</a></li>
+       
             </nav>
 
         </aside>
         <main>
+            
             <div class="tabs">
                 <span class="active">Tất cả</span>
                 <span>Chờ xác nhận</span>
@@ -56,6 +65,7 @@
                         <span>Tên shop</span>
                         <button>Chat</button>
                         <button>Xem shop</button>
+                       <h4>Giao thành công</h4>
                     </div>
                     <div class="order-details">
                         <div class="product">Ảnh</div>
@@ -64,6 +74,7 @@
                             <p>Phân loại</p>
                             <p>Số lượng</p>
                             <p class="price">Giá</p>
+                           
                         </div>
                         
                     </div>
@@ -81,6 +92,7 @@
                         <span>Tên shop</span>
                         <button>Chat</button>
                         <button>Xem shop</button>
+                        <h4>Đang giao hàng</h4>
                         
                     </div>
                     <div class="order-details">
@@ -90,13 +102,13 @@
                             <p>Phân loại</p>
                             <p>Số lượng</p>
                             <p class="price">Giá</p>
+                          
                         </div>
                     
                     </div>
                     <div class="order-total">Thành tiền:</div>
                     <div class="actions">
                     
-                     <p>Đang vận chuyển</p>
                     </div>
                 </div>
             </div>
@@ -107,6 +119,7 @@
                         <span>Tên shop</span>
                         <button>Chat</button>
                         <button>Xem shop</button>
+                        <h4>Chờ xác nhận</h4>
                     </div>
                     <div class="order-details">
                         <div class="product">Ảnh</div>
@@ -120,8 +133,35 @@
                     </div>
                     <div class="order-total">Thành tiền:</div>
                     <div class="actions">
-                    
-                     <p>Hoàn thành</p>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+             
+            <div class="orders">
+                <div class="order">
+                    <div class="shop-info">
+                        <span>Tên shop</span>
+                        <button>Chat</button>
+                        <button>Xem shop</button>
+                        <h4>Đã hủy</h4>
+                    </div>
+                    <div class="order-details">
+                        <div class="product">Ảnh</div>
+                        <div class="info">
+                            <p>Tên sản phẩm</p>
+                            <p>Phân loại</p>
+                            <p>Số lượng</p>
+                            <p class="price">Giá</p>
+                        </div>
+                        
+                    </div>
+                    <div class="order-total">Thành tiền:</div>
+                    <div class="actions">
+                        <button>Đánh giá</button>
+
                     </div>
                 </div>
             </div>

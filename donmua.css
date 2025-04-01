@@ -10,80 +10,99 @@ body {
 }
 
 .header {
-    width: 100%;
-    height: 50px;
-    padding: 35px;
+    display: flex;               /* Bật Flexbox */
+    align-items: center;         /* Căn giữa theo trục dọc */
+    justify-content: space-between; /* Giãn đều hai đầu trái-phải */
+    background: linear-gradient(0, #0447b5, #0447b5de); /* Màu nền */
+    padding: 10px 20px;          /* Khoảng cách xung quanh */
+    border-bottom: 1px solid #ccc; /* Đường kẻ mảnh bên dưới header */
+  }
+  
+  /* Bên trái: Logo hoặc chữ "Kênh người bán" */
+  .left {
+    flex: 0 0 auto; /* Cố định nội dung, không cho giãn */
+  }
+  .left p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Ở giữa: Thanh tìm kiếm */
+  .center {
+    flex: 1;                     /* Phần này sẽ dãn chiếm hết không gian còn lại */
+    display: flex;               /* Dùng flex để căn giữa input nếu muốn */
+    justify-content: center;     /* Căn giữa theo chiều ngang */
+  }
+  .center input {
+    width: 80%;                  /* Chiều rộng ô tìm kiếm */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Bên phải: User info (và có thể có giỏ hàng) */
+  .right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(0, #0447b5, #0447b5de);
-}
-.header h2{
-    flex:1;
-    padding-bottom: 60px;
-    font-size: 17px;
-}
-.header-ben {
-    display: flex;
-    align-items: center;
-}
-
-.header-ben img {
+    gap: 10px;                   /* Khoảng cách giữa các phần tử con */
+  }
+  
+  /* Nếu có icon giỏ hàng, có thể tùy chỉnh kích cỡ */
+  .icon-cart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  /* Avatar user */
+  .avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 8px;
-}
-.header .Timkiem {
-    margin-right: 140px; /* Giảm margin để tránh lệch */
+    object-fit: cover;
+  }
+.container {
     display: flex;
-    align-items: center;
-   
-    
-}
-
-.header .Timkiem input {
-    padding: 8px;
-    width: 800px; /* Đặt độ rộng hợp lý */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 130px;
-
-}
-
-
-.header .logo {
-    width: 50px;
-    height: 50px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.header .search-bar {
-    flex:1 ;
-    margin: 0 20px;
-    
-}
-
-
-.header .user-info {
-    display: flex;
-    align-items: center;
-    
-}
-.header .user-info .cart {
-    margin-left: 20px;
+    width: 100%;
+    min-height: 100px;
+    background: white;
+    justify-content: start;
     
 }
 .container {
     display: flex;
-   
+    width: 100%;
+    min-height: 100vh;
+    background: white;
 }
+
 .sidebar {
     width: 20%;
     background: #e0e0e0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+nav ul li{
+    margin: 25px 0;
+
+    text-decoration-style: none;
+    color: #333;
+    font-weight: bold;
+}
+nav ul li a{
+    text-decoration: double;
+    list-style: none;
+    color: #333;
+}
+.Anhnguoidung{
+
+    
+    background-image: 100%;
    
 }
 main {
@@ -112,11 +131,14 @@ main {
     margin-bottom: 10px;
 }
 .shop-info {
- 
-    
+   
+    display: flex;
     align-items: center;
     margin-bottom: 10px;
-    
+    border-bottom:1PX #ddd solid ;
+}
+.shop-info h4{
+    margin-left: 1050px;
 }
 .shop-info button{
     margin-left: 10px;
@@ -125,6 +147,10 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+    border-bottom:1PX #ddd solid ;
+}
+.order-total{
+    padding-top: 10px;
 }
 .product {
     width: 60px;
@@ -156,7 +182,7 @@ main {
     margin-right: 10px;
 }
 .actions button:last-child {
-    background: #c41717;
+    background: #3498db;
     border: none;
     color: #fff;
     padding: 12px 24px;
@@ -188,6 +214,7 @@ nav ul li{
    
 }
 nav ul li a{
+    list-style: none;
     text-decoration: double;
 }
 .content {
