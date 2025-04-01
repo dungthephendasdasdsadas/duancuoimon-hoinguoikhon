@@ -16,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgb(236, 57, 7),rgb(218, 149, 31));
+    background: linear-gradient(0, #0447b5, #0447b5de);
 }
 .header h2{
     flex:1;
@@ -38,7 +38,7 @@ body {
     margin-right: 140px; /* Giảm margin để tránh lệch */
     display: flex;
     align-items: center;
-
+   
     
 }
 
@@ -51,15 +51,6 @@ body {
 
 }
 
-.header .Timkiem button {
-    padding: 8px ;
-    background: #6200ea;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
 
 .header .logo {
     width: 50px;
@@ -88,20 +79,86 @@ body {
 }
 .container {
     display: flex;
-    width: 100%;
-    min-height: 100vh;
-    background: white;
+   
 }
-
 .sidebar {
     width: 20%;
     background: #e0e0e0;
-    padding: 20px;
+   
 }
+main {
+    flex: 1;
+    margin-left: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tabs span {
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.tabs .active {
+    border-bottom: 2px solid red;
+}
+.orders {
+    margin-top: 20px;
+}
+.order {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.shop-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.shop-info-end{
+  margin-left: 400px;
+}
+.order-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product {
+    width: 60px;
+    height: 60px;
+    background: gray;
+}
+.info p {
+    margin-bottom: 5px;
+}
+.price {
+    font-weight: bold;
+    color: red;
+}
+.actions {
+    display: flex;
+    justify-content: end ;
+}
+
+.actions button:first-child {
+    background-color: blue;
+    color: white;
+    padding-left:10px ;
+}
+.actions button:last-child {
+    background-color: red;
+    color: white;
+}
+
+
+
 
 nav ul {
     list-style: none;
-    padding: 0;
+   
 
 }
 nav ul li{
@@ -113,59 +170,19 @@ nav ul li{
 }
 .Anhnguoidung{
 
-    
+    padding-left: 20px;
     background-image: 100%;
    
 }
 nav ul li a{
     text-decoration: double;
 }
-
 .content {
     flex: 1;
     padding: 40px;
    
 }
-.content h2{
-    text-align: center;
-}
 
-.content p{
-   
-    background-image: url("img2/Screenshot\ 2025-02-13\ 154916.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed ;
-    text-align: center;
-}
-form {
-    display: flex;    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-    background: #fff;
-    padding: 30px;
-    
-    
- 
-} 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-input {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.content form  button {
-    background-color: #6520c6;
-    margin-top: 30px;
-    height: 30px;
-    border-radius: 5px;
-    color: #e0e0e0;
-    font-size: 18px;
-
-    }
    
 footer{
     background: white;
