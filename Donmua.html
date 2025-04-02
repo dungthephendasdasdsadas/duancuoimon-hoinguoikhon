@@ -53,14 +53,15 @@
         <main>
             
             <div class="tabs">
-                <span class="active">Tất cả</span>
-                <span>Chờ xác nhận</span>
-                <span>Đang vận chuyển</span>
-                <span>Hoàn thành</span>
-                <span>Đã hủy/Trả hàng/Hoàn tiền</span>
+                <button class="tab-button active" data-tab="all">Tất cả</button>
+                <button class="tab-button" data-tab="choxacnhan">Chờ xác nhận</button>
+                <button class="tab-button" data-tab="dangvanchuyen">Đang vận chuyển</button>
+                <button class="tab-button" data-tab="hoanthanh">Hoàn thành</button>
+                <button class="tab-button" data-tab="dahuy">Đã hủy</button>
             </div>
+
             <div class="orders">
-                <div class="order">
+                <div class="order"  data-status="hoanthanh">
                     <div class="shop-info">
                         <span>Tên shop</span>
                         <button>Chat</button>
@@ -87,7 +88,7 @@
             </div>
 
             <div class="orders">
-                <div class="order">
+                <div class="order" data-status="dangvanchuyen">
                     <div class="shop-info">
                         <span>Tên shop</span>
                         <button>Chat</button>
@@ -114,7 +115,7 @@
             </div>
             
             <div class="orders">
-                <div class="order">
+                <div class="order" data-status="choxacnhan">
                     <div class="shop-info">
                         <span>Tên shop</span>
                         <button>Chat</button>
@@ -141,8 +142,8 @@
 
              
             <div class="orders">
-                <div class="order">
-                    <div class="shop-info">
+                <div class="order" data-status="dahuy">
+                    <div class="shop-info" >
                         <span>Tên shop</span>
                         <button>Chat</button>
                         <button>Xem shop</button>
