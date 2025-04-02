@@ -9,74 +9,7 @@ body {
     background-size:cover;
 }
 
-.header {
-    width: 100%;
-    height: 50px;
-    padding: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(0, #0447b5, #0447b5de);
-}
-.header h2{
-    flex:1;
-    padding-bottom: 60px;
-    font-size: 17px;
-}
-.header-ben {
-    display: flex;
-    align-items: center;
-}
 
-.header-ben img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-.header .Timkiem {
-    margin-right: 140px; /* Giảm margin để tránh lệch */
-    display: flex;
-    align-items: center;
-   
-    
-}
-
-.header .Timkiem input {
-    padding: 8px;
-    width: 800px; /* Đặt độ rộng hợp lý */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 130px;
-
-}
-
-
-.header .logo {
-    width: 50px;
-    height: 50px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.header .search-bar {
-    flex:1 ;
-    margin: 0 20px;
-    
-}
-
-
-.header .user-info {
-    display: flex;
-    align-items: center;
-    
-}
-.header .user-info .cart {
-    margin-left: 20px;
-    
-}
 .container {
     display: flex;
    
@@ -87,7 +20,58 @@ body {
    
 }
 
-
+.header {
+    display: flex;               /* Bật Flexbox */
+    align-items: center;         /* Căn giữa theo trục dọc */
+    justify-content: space-between; /* Giãn đều hai đầu trái-phải */
+    background: linear-gradient(0, #0447b5, #0447b5de); /* Màu nền */
+    padding: 10px 20px;          /* Khoảng cách xung quanh */
+    border-bottom: 1px solid #ccc; /* Đường kẻ mảnh bên dưới header */
+  }
+  
+  /* Bên trái: Logo hoặc chữ "Kênh người bán" */
+  .left {
+    flex: 0 0 auto; /* Cố định nội dung, không cho giãn */
+  }
+  .left p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Ở giữa: Thanh tìm kiếm */
+  .center {
+    flex: 1;                     /* Phần này sẽ dãn chiếm hết không gian còn lại */
+    display: flex;               /* Dùng flex để căn giữa input nếu muốn */
+    justify-content: center;     /* Căn giữa theo chiều ngang */
+  }
+  .center input {
+    width: 80%;                  /* Chiều rộng ô tìm kiếm */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Bên phải: User info (và có thể có giỏ hàng) */
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;                   /* Khoảng cách giữa các phần tử con */
+  }
+  
+  /* Nếu có icon giỏ hàng, có thể tùy chỉnh kích cỡ */
+  .icon-cart {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  /* Avatar user */
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
 
 
@@ -115,25 +99,26 @@ nav ul li a{
     color: #333;
 }
 .content {
-  
+    display: flex;
     padding: 40px;
+    flex-direction: column;
 }
 .from-use{
    margin-left: 40px;
-    height: 600px;
+    height: 440px;
     width: max-content;
     display: flex;
     margin: 70px;
-    border: 1px solid black;
+ 
 }
 .from-use input{
 width: 60%;
 padding: 5px;
 }
 .tabs{
-    border: 1px solid black;
+    border-bottom: 1px solid #b9b1b1dd;
     display: flex;
-        
+        font-size: 19px;
         padding: 5px 10px;
    justify-content: space-between;
 
@@ -142,27 +127,37 @@ padding: 5px;
     padding: 5px ;
     height: 50px;
     margin-top: 10px;
-    background: #3498db;
+    background: #3ba4eb;
     border: none;
         color: #fff;
         border-radius: 4px;
+        
+}
+.tabs button:hover{
+    background: #2980b9;
 }
 .from-use{
    flex-direction: column;
+   border-bottom: 1px solid #b9b1b1dd;
 }
 form {
- 
+    font-size: 16px;
+    font-weight: bold;
     display: flex;   
      flex-direction: column;
     height: 100%;
-    margin: 10px;
+    
     margin-left: 40px;
     background: #fff;
     width: 1100px;
-    border: 1px solid black;
-  
  
+    height: 300px;
+  
 } 
+form label{
+    margin-top: 20px;
+
+}
 
 
 

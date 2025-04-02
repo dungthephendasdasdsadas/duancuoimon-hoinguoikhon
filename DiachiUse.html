@@ -11,25 +11,35 @@
 <body>
 
     <div class="header">
-        <div>
-            <h2>Kênh người bán</h2>
+        <!-- Bên trái: Logo hoặc Kênh người bán -->
+        <div class="left">
+          <p>Kênh người bán</p>
         </div>
-        <div class="Timkiem">
-            <input type="text" placeholder="Tìm kiếm..." required>
-            <div class="header-ben">
-                <a href="Giaodiennguoidung.html"> <img src="img2/brn.jpg" alt="img user name" width="100px"></a>
-                
-                <span>User name</span>
-            </div>
+      
+        <!-- Ở giữa: Thanh tìm kiếm -->
+        <div class="center">
+          <input type="text" placeholder="Tìm kiếm..." required>
         </div>
-    </div>
+      
+        <!-- Bên phải: Ảnh đại diện + Tên user (và/hoặc giỏ hàng) -->
+        <div class="right">
+          <!-- Nếu có icon giỏ hàng, bạn có thể thêm ở đây -->
+          <a href="cart.html"><img src="img2/cart.png" alt="Cart" class="icon-cart"></a> 
+          
+          <a href="Giaodiennguoidung.html">
+            <img src="img2/brn.jpg" alt="img user name" class="avatar">
+          </a>
+          <span>User name</span>
+        </div>
+      </div>
+
     <div class="container">
         <aside class="sidebar">
             <img src="img2/Screenshot 2025-02-13 154916.png" alt="" class="Anhnguoidung">
             <nav>
                 <ul>
 
-                    <li><A href="">Sửa hồ sơ </A></li>
+                    <li><h1>Sửa hồ sơ </h1> </li>
                     <a href=""></a>
 
                     <li> <a href="Giaodiennguoidung.html"> Hồ sơ </a></li>
@@ -69,6 +79,30 @@
                         </label>
     
                     </form>
+                    
+                </div>
+                <div class="from-use">
+
+                    
+                    <form>
+                       
+                        <label>Địa chỉ</label>
+                        <input type="text">
+    
+                        <label>Tên</label>
+                        <input type="text">
+
+                        <label>email</label>
+                        <input type="email">
+
+                        <label>Số Điện Thoại</label>
+                        <input type="SDT">
+    
+
+                        </label>
+    
+                    </form>
+                    
                 </div>
         </main>
     </div>
