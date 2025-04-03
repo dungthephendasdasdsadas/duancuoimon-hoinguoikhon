@@ -3,56 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý đơn hàng</title>
+  <title>Modal Ông Chủ Cửa Hàng</title>
   <link rel="stylesheet" href="demo.css">
 </head>
 <body>
+  <h2>Trang web của cửa hàng</h2>
+  <p>Nội dung trang web chính ...</p>
+  
+  <!-- Nút mở modal -->
+  <button id="openModalBtn">Mở Modal (Ông Chủ Cửa Hàng)</button>
 
-  <!-- Thanh tab trạng thái -->
-  <div class="tabs">
-    <button class="tab-button active" data-tab="all">Tất cả</button>
-    <button class="tab-button" data-tab="choxacnhan">Chờ xác nhận</button>
-    <button class="tab-button" data-tab="dangvanchuyen">Đang vận chuyển</button>
-    <button class="tab-button" data-tab="hoanthanh">Hoàn thành</button>
-    <button class="tab-button" data-tab="dahuy">Đã hủy</button>
-  </div>
-
-  <!-- Danh sách đơn hàng -->
-  <div class="orders">
-    <!-- Đơn hàng 1 -->
-    <div class="order" data-status="choxacnhan">
-      <h3>Tên shop: ABC Shop</h3>
-      <p>Sản phẩm: Phấn hoa</p>
-      <p>Số lượng: 2</p>
-      <p>Giá: 200.000đ</p>
-      <p>Trạng thái: <strong>Chờ xác nhận</strong></p>
-    </div>
-
-    <!-- Đơn hàng 2 -->
-    <div class="order" data-status="dangvanchuyen">
-      <h3>Tên shop: XYZ Store</h3>
-      <p>Sản phẩm: Bút lông</p>
-      <p>Số lượng: 1</p>
-      <p>Giá: 50.000đ</p>
-      <p>Trạng thái: <strong>Đang vận chuyển</strong></p>
-    </div>
-
-    <!-- Đơn hàng 3 -->
-    <div class="order" data-status="hoanthanh">
-      <h3>Tên shop: Demo Shop</h3>
-      <p>Sản phẩm: Áo thun</p>
-      <p>Số lượng: 3</p>
-      <p>Giá: 300.000đ</p>
-      <p>Trạng thái: <strong>Hoàn thành</strong></p>
-    </div>
-
-    <!-- Đơn hàng 4 -->
-    <div class="order" data-status="dahuy">
-      <h3>Tên shop: 123 Shop</h3>
-      <p>Sản phẩm: Giày thể thao</p>
-      <p>Số lượng: 1</p>
-      <p>Giá: 400.000đ</p>
-      <p>Trạng thái: <strong>Đã hủy</strong></p>
+  <!-- Modal -->
+  <div id="storeOwnerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        Ông Chủ Cửa Hàng
+      </div>
+      <div class="modal-body">
+        <p>Chờ chút, bạn phải nghe tôi nói trước đã!</p>
+        <p>Trước khi mua hàng, hãy đảm bảo rằng bạn đã xem qua các sản phẩm và chính sách của cửa hàng nhé.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="agreeBtn">Đồng ý</button>
+      </div>
     </div>
   </div>
 

@@ -101,137 +101,98 @@ nav ul li a{
     list-style: none;
     color: #333;
 }
-.Anhnguoidung{
 
-    
-    background-image: 100%;
-   
-}
-main {
-    flex: 1;
-    margin-left: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-.tabs button {
-    margin-right: 15px;
-    cursor: pointer;
-    padding: 5px 10px;
-}
-.tabs .active {
-    border-bottom: 2px solid red;
-}
-.orders {
-    margin-top: 20px;
-}
-.order {
-    background: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-.shop-info {
-   
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border-bottom:1PX #ddd solid ;
-    justify-items: end;
-}
-.shop-info h4{
-    margin-left: 1050px;
-}
-.shop-info button{
-    margin-left: 10px;
-}
-.order-details {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom:1PX #ddd solid ;
-}
-.order-total{
-    padding-top: 10px;
-}
-.product {
-    width: 60px;
-    height: 60px;
-    background: gray;
-}
-.product image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.info p {
-    margin-bottom: 5px;
-}
-.price {
-    font-weight: bold;
-    color: red;
-}
-.actions {
-    display: flex;
-    justify-content: end ;
-   
-}
-
-.actions button:first-child {
-    background: #3498db;
-    border: none;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-right: 10px;
-}
-.actions button:last-child {
-    background: #3498db;
-    border: none;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-
-
-
-nav ul {
-    list-style: none;
-   
-
-}
-nav ul li{
-    margin: 25px 0;
-
-    text-decoration-style: none;
-    color: #333;
-    font-weight: bold;
-}
-.Anhnguoidung{
-
-    padding-left: 20px;
-    background-image: 100%;
-   
-}
-nav ul li a{
-    list-style: none;
-    text-decoration: double;
-}
 .content {
-    flex: 1;
+    width: 100%;
+   justify-content: center;
     padding: 40px;
-   
+
+}
+.content h2{
+ 
+    border-bottom: 1px solid #ccc;
 }
 
+.content p{
+    text-align: end;
+}
+.from-use{
+  
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin: 70px;
+    
+}
+form {
+ 
+    display: flex;   
+     flex-direction: column;
+    height: 100%;
+    margin: auto;
+    background: #fff;
+    width: 900px;
+    
+  
+ 
+} 
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+ 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.Gioitinh{
+    margin-top: 20px;
+
+}
+.content form  button {
+    background-color: #6520c6;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-size: 18px;
+
+    }
+    .profile-image {
+        
    
+        justify-content: end;
+        flex-direction: column;
+       align-content: center;
+       padding-bottom: 70px;
+       margin-right:39px ;
+
+      }
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+      
+      }
+      .profile-image button {
+        margin-top: 10px;
+        padding: 6px 12px;
+        background: #3498db;
+        width: 200px;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        
+      }
+  
+      .profile-image button:hover {
+        background: #2980b9;
+      }
+      
 footer{
     background: white;
     padding:40px 0;

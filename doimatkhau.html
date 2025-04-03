@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ho so nguoi dung</title>
-    <link rel="stylesheet" href="DiachiUse.css">
+    <link rel="stylesheet" href="giaodiennguoidung.css">
 </head>
 
 <body>
@@ -33,7 +33,8 @@
         </div>
     </div>
 
-    <div class="container"> 
+
+    <div class="container">
         <aside class="sidebar">
             <img src="img2/Screenshot 2025-02-13 154916.png" alt="" class="Anhnguoidung">
             <nav>
@@ -43,66 +44,40 @@
                         <h1>Sửa hồ sơ </h1>
                     </li>
                     <a href=""></a>
-
-                    <li> <a href="Giaodiennguoidung.html"> Hồ sơ </a></li>
-                    <li> <a href="DiachiUse.html">
-                            <H1> Địa chỉ </H1>
+                    <li></li>
+                    <li> <a href="Giaodiennguoidung.html">
+                            Hồ sơ 
                         </a></li>
-                    <li> <a href="doimatkhau.html">Đổi mật khẩu</a></li>
-                    <li> <a href="Donmua.html"> đơn mua</a></li>
-                    <li> <a href="#"> đã đánh giá</a></li>
+                    <li> <a href="DiachiUse.html"> Địa chỉ </a></li>
+                    
+                    <li> <a href="doimatkhau.html"> <h1>Đổi mật khẩu</h1></a></li>
+                    <li> <a href="Donmua.html"> Đơn mua</a></li>
+                    <li> <a href="#"> Đã đánh giá</a></li>
 
                 </ul>
             </nav>
 
         </aside>
         <main class="content">
-            <!-- Khối đầu tiên có nút Thêm địa chỉ -->
-            <div class="from-use" id="address-container">
-                <div class="tabs">
-                    <h2>Địa chỉ của tôi</h2>
-                    <button id="openModalBtn">Thêm địa chỉ</button>
-                </div>
-                  
-            <!-- Các form khác nếu có, sẽ nằm sau -->
-                   
-               
-                
-            </div>
-        
+
+            <div class="from-use">
+                <form>
+                    <h2>Đổi mật khẩu</h2>
+                    <label>Mật khẩu cũ></label>
+                    <input type="text">
+
+                    <label>Mật khẩu Mới</label>
+                    <input type="text">
+
+                    <label>Nhập lại mật khẩu mới</label>
+                    <input type="email">
+                    <button id="Xacnhan">Xác nhận</button>
+
+                    
         </main>
     </div>
 
     </div>
-    <!-- modal-->
-    <div id="storeOwnerModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                Thêm địa chỉ
-            </div>
-            <div class="modal-body">
-                <form class="modal-from">
-                    <label>Địa chỉ</label>
-                    <input type="text"required placeholder="Nhập địa chỉ" id="Diachi"required>
-
-                    <label>Tên</label>
-                    <input type="text"required placeholder="Nhập tên" id="Ten"required>
-
-                    <label>Email</label>
-                    <input type="email"required placeholder="Nhập email" id="Email"required>
-
-                    <label>Số Điện Thoại</label>
-                    <input type="text"required placeholder="Nhập số điện thoại" id="SDT"required>
-                </form>
-
-            </div>
-            <div class="modal-footer">
-                <button  type="submit" class="Themdiachi" id="openModalBtn">Thêm địa chỉ</button>
-            </div>
-        </div>
-    </div>
-
 
     <footer>
         <div class="footer-main">
@@ -177,7 +152,7 @@
             </div>
         </div>
     </footer>
-    <script src="Diachi.js"></script>
+    <script src="Giaodiennguoidung.js"></script>
 </body>
 
 </html>

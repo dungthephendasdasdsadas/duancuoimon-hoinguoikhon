@@ -1,26 +1,30 @@
-// Lấy tất cả nút tab và các đơn hàng
-const tabButtons = document.querySelectorAll('.tab-button');
-const orders = document.querySelectorAll('.order');
-
-// Lặp qua từng nút tab
-tabButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Xóa class 'active' khỏi tất cả nút
-    tabButtons.forEach(btn => btn.classList.remove('active'));
-    // Thêm class 'active' cho nút vừa bấm
-    button.classList.add('active');
+document.addEventListener('DOMContentLoaded', function () {
+  const addBtn = document.querySelector('.Themdiachi');
+  
+  addBtn.addEventListener('click', function () {
+    // Tạo khối mới với class "from-use"
+    const newAddressForm = document.createElement('div');
+    newAddressForm.classList.add('from-use');
     
-    // Lấy giá trị trạng thái từ data-tab
-    const filterStatus = button.getAttribute('data-tab');
+    // Nội dung HTML của form mới (bạn có thể tùy chỉnh lại)
+    newAddressForm.innerHTML = `
+      <form>
+        <label>Địa chỉ</label>
+        <input type="text" placeholder="Nhập địa chỉ">
+  
+        <label>Tên</label>
+        <input type="text" placeholder="Nhập tên">
+  
+        <label>Email</label>
+        <input type="email" placeholder="Nhập email">
+  
+        <label>Số Điện Thoại</label>
+        <input type="text" placeholder="Nhập số điện thoại">
+      </form>
+    `;
     
-    // Lọc đơn hàng
-    orders.forEach(order => {
-      // Nếu bấm "Tất cả" hoặc order.status khớp với filterStatus thì hiển thị
-      if (filterStatus === 'all' || order.getAttribute('data-status') === filterStatus) {
-        order.style.display = 'block';
-      } else {
-        order.style.display = 'none';
-      }
-    });
+    // Thêm form mới vào cuối main.content
+    const content = document.querySelector('.content');
+    content.appendChild(newAddressForm);
   });
 });
