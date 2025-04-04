@@ -46,7 +46,7 @@
                  
                   <li> <a href="doimatkhau.html"> Đổi mật khẩu</a></li>
                   <li> <a href="Donmua.html"> <H1>Đơn mua </H1></a></li>
-                  <li> <a href="#"> Đã đánh giá</a></li>
+                  <li> <a href="DanhGia.html"> Đã đánh giá</a></li>
        
             </nav>
 
@@ -84,7 +84,7 @@
                     </div>
                     <div class="order-total">Thành tiền:</div>
                     <div class="actions">           
-                        <button>Đánh giá</button>
+                        <button id="openModalBtn">Đánh giá</button>
                         <button>Yêu cầu trả hàng/Hoàn tiền</button>
                     </div>
                 </div>
@@ -171,7 +171,56 @@
             </div>
         </main>
     </div>
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <h2>ĐÁNH GIÁ SẢN PHẨM</h2>
+    
+          <div class="product-info">
+            <div class="product-image">
+              HÌNH ẢNH
+            </div>
+            <div class="product-details">
+              <h3>Tên sản phẩm</h3>
+              <div class="rating">
+                <label>Chất lượng sản phẩm</label>
+                <div class="stars" id="starContainer">
+                  <!-- 5 sao -->
+                  <span class="star" data-value="1">&#9733;</span>
+                  <span class="star" data-value="2">&#9733;</span>
+                  <span class="star" data-value="3">&#9733;</span>
+                  <span class="star" data-value="4">&#9733;</span>
+                  <span class="star" data-value="5">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <textarea class="review-textarea" placeholder="Hãy chia sẻ những điều bạn thích về sản phẩm này với những người mua khác nhé!"></textarea>
+    
+          <div class="images-section">
+            <input type="file" id="imageInput" multiple style="display: none;" accept="image/*">
+            <button class="add-image-btn" id="addImageBtn">Thêm hình ảnh</button>
+            <div class="images-preview" id="imagesPreview"></div>
+          </div>
+    
+          <button class="complete-btn" id="completeBtn">Hoàn Thành</button>
+        </div>
+      </div>
+    
 
+            <textarea class="review-textarea"
+                placeholder="Hãy chia sẻ những điều bạn thích về sản phẩm này với những người mua khác nhé!"></textarea>
+
+            <div class="images-section">
+                <input type="file" id="imageInput" multiple style="display: none;" accept="image/*">
+                <button class="add-image-btn" id="addImageBtn">Thêm hình ảnh</button>
+                <div class="images-preview" id="imagesPreview"></div>
+            </div>
+
+            <button class="complete-btn" id="completeBtn">Hoàn Thành</button>
+        </div>
+    </div>
     </div>
 
 
